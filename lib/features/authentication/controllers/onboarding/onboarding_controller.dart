@@ -1,3 +1,4 @@
+import 'package:alinova_ecommerce/features/authentication/screens/login/login.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
@@ -19,7 +20,7 @@ class OnBoardingController extends GetxController{
 
   void nextPage(){
     if(currentPageIndex.value ==2 ){
-      // Get.to();
+      Get.offAll(const Login());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

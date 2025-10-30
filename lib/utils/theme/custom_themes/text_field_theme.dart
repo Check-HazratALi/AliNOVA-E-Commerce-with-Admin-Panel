@@ -37,10 +37,10 @@ class ATextFieldTheme{
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
-    labelStyle: TextStyle().copyWith(fontSize: 14.0, color: Colors.black),
-    hintStyle: TextStyle().copyWith(fontSize: 14.0, color: Colors.black),
+    labelStyle: TextStyle().copyWith(fontSize: 14.0, color: Colors.white),
+    hintStyle: TextStyle().copyWith(fontSize: 14.0, color: Colors.white),
     errorStyle: TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: TextStyle().copyWith(fontSize: 14.0, color: Colors.black),
+    floatingLabelStyle: TextStyle().copyWith(fontSize: 14.0, color: Colors.white),
     border: OutlineInputBorder().copyWith(
         borderRadius: BorderRadius.circular(14),
         borderSide: BorderSide(width: 1, color: Colors.grey)
@@ -51,7 +51,7 @@ class ATextFieldTheme{
     ),
     focusedBorder: OutlineInputBorder().copyWith(
         borderRadius: BorderRadius.circular(14),
-        borderSide: BorderSide(width: 1, color: Colors.black12)
+        borderSide: BorderSide(width: 1, color: Colors.white)
     ),
     errorBorder: OutlineInputBorder().copyWith(
         borderRadius: BorderRadius.circular(14),

@@ -15,4 +15,14 @@ class ATexts{
   static const String homeAppbarTitle = "Good day for Shopping";
   static const String homeAppbarSubTitle = "Hazrat Ali";
 
+  //Login
+  static const String loginTitle = "Welcome Back,";
+  static const String loginSubTitle = "Discover Limitless Choices and Unmatched Conversience";
+  static const String email = "Email";
+  static const String password = "Password";
+  static const String rememberMe = "Remember Me";
+  static const String forgetPassword = "Forget Password";
+  static const String signIn = "Sign In";
+  static const String createAccount = "Create Account";
+
 }
