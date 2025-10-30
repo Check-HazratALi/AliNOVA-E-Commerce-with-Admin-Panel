@@ -1,6 +1,8 @@
+import 'package:alinova_ecommerce/features/authentication/screens/singup/signup.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {
@@ -64,7 +66,7 @@ class LoginForm extends StatelessWidget {
             // Create Account Button
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: (){}, child: const Text(ATexts.createAccount)),
+              child: ElevatedButton(onPressed: ()=> Get.to(()=>SignupScreen()), child: const Text(ATexts.createAccount)),
             ),
         
           ],
