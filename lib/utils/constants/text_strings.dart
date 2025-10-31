@@ -42,5 +42,17 @@ class ATexts{
   static const String emailverify ="Verify your email address!";
   static const String continuee ="Continue";
   static const String resendEmail ="Resend Email";
+  static const String emailverifysubtitle ="Verify your email address! Discover Limitless Choices and Unmatched Conversience .Verify your email address! Discover Limitless Choices and Unmatched Conversience";
+  static const String verifysuccess ="Your account successfully created!";
+  static const String successSubTitle ="Verify your email address! Discover Limitless Choices and Unmatched Conversience .Verify your email address! Discover Limitless Choices and Unmatched Conversience";
+
+  //Forget Password
+  static const String forgetPasswordTitle ="Forget Password";
+  static const String submitButton ="Submit";
+  static const String forgetPasswordSubTitle ="Verify your email address! Discover Limitless Choices and Unmatched Conversience .Verify your email address! Discover Limitless Choices and Unmatched Conversience";
+  static const String resetdone ="Done";
+  static const String resetPassTitle ="Password Reset Email Sent";
+  static const String resetPassSubTitle ="Verify your email address! Discover Limitless Choices and Unmatched Conversience .Verify your email address! Discover Limitless Choices and Unmatched Conversience";
+
 
 }

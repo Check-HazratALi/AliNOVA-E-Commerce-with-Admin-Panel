@@ -1,3 +1,4 @@
+import 'package:alinova_ecommerce/features/authentication/screens/forget_password/forget_pass_screen.dart';
 import 'package:alinova_ecommerce/features/authentication/screens/singup/signup.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/constants/text_strings.dart';
@@ -50,7 +51,7 @@ class LoginForm extends StatelessWidget {
         
                 // Forget Password
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(()=>ForgetPassScreen()),
                   child: const Text(ATexts.forgetPassword),
                 ),
               ],

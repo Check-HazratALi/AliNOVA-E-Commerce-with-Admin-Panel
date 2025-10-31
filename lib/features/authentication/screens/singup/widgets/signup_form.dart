@@ -1,7 +1,9 @@
+import 'package:alinova_ecommerce/features/authentication/screens/singup/verify_email.dart';
 import 'package:alinova_ecommerce/features/authentication/screens/singup/widgets/terms_and_condititons.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SignUpForm extends StatelessWidget {
@@ -85,7 +87,7 @@ class SignUpForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(()=>VerifyEmail()),
               child: const Text(ATexts.signup),
             ),
           ),
