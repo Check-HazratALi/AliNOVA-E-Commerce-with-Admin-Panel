@@ -1,3 +1,4 @@
+import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/primaryheader_container.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -5,6 +6,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.green,);
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            APrimaryHeaderContainer(
+              child: Container()
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
+
