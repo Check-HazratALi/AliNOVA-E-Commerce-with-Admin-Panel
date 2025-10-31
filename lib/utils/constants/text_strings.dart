@@ -54,5 +54,8 @@ class ATexts{
   static const String resetPassTitle ="Password Reset Email Sent";
   static const String resetPassSubTitle ="Verify your email address! Discover Limitless Choices and Unmatched Conversience .Verify your email address! Discover Limitless Choices and Unmatched Conversience";
 
+  //appbar texts
+  static const String appBarTitle ="Good day for shopping";
+  static const String appBarName ="Hazrat Ali";
 
 }
