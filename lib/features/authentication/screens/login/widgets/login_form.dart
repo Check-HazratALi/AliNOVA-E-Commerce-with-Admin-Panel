@@ -1,5 +1,6 @@
 import 'package:alinova_ecommerce/features/authentication/screens/forget_password/forget_pass_screen.dart';
 import 'package:alinova_ecommerce/features/authentication/screens/singup/signup.dart';
+import 'package:alinova_ecommerce/navigaton_menu.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +62,7 @@ class LoginForm extends StatelessWidget {
             // Sign In Button
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: (){}, child: const Text(ATexts.signIn)),
+              child: ElevatedButton(onPressed: ()=>Get.to(()=>NavigatonMenu()), child: const Text(ATexts.signIn)),
             ),
         const SizedBox(height: ASizes.spaceBtwItems,),
             // Create Account Button
