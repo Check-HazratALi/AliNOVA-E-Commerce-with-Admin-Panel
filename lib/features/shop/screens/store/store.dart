@@ -1,18 +1,12 @@
-import 'package:alinova_ecommerce/common/styles/rounded_container.dart';
 import 'package:alinova_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:alinova_ecommerce/common/widgets/appbar/tapbar.dart';
 import 'package:alinova_ecommerce/common/widgets/brands/brand_card.dart';
-import 'package:alinova_ecommerce/common/widgets/brands/brand_show_case.dart';
 import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
-import 'package:alinova_ecommerce/common/widgets/images/circular_images.dart';
 import 'package:alinova_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:alinova_ecommerce/common/widgets/product/cart/cart_menu_icon.dart';
-import 'package:alinova_ecommerce/common/widgets/texts/brand_title_with_verify.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:alinova_ecommerce/features/shop/screens/store/widgets.dart/category_tab.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
-import 'package:alinova_ecommerce/utils/constants/enums.dart';
-import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/helpers/healper_function.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +16,6 @@ class StoreScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = AHelperFunctions.isDarkMode(context);
 
     return DefaultTabController(
       length: 5,
