@@ -12,4 +12,11 @@ class AImages{
   static const String onBoardingImage1 = "assets/images/intro_images/on_boarding1.json";
   static const String onBoardingImage2 = "assets/images/intro_images/on_boarding2.json";
   static const String onBoardingImage3 = "assets/images/intro_images/on_boarding3.json";
+
+  //Banner images
+  static const String promobanner1 = "assets/images/banners/promobanner1.webp";
+  static const String promobanner2 = "assets/images/banners/promobanner2.jpg";
+  static const String promobanner3 = "assets/images/banners/promobanner3.jpg";
+
+
 }

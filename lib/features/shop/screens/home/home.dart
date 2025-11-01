@@ -3,6 +3,8 @@ import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/search
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:alinova_ecommerce/features/shop/screens/home/widgets/promo_slider.dart';
+import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
@@ -24,9 +26,7 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: ASizes.spaceBtwSections),
 
                   //Searchbar
-                  ASearchBox(
-                    text: 'Search in Store',
-                  ),
+                  ASearchBox(text: 'Search in Store'),
                   const SizedBox(height: ASizes.spaceBtwSections),
 
                   //Categories
@@ -44,6 +44,19 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+              ),
+            ),
+            //Body
+            Padding(
+              padding: const EdgeInsets.all(ASizes.defaultSpace),
+              child: PromoSlider(
+                banners: [
+                  AImages.promobanner1,
+                  
+                  AImages.promobanner2,
+                  
+                  AImages.promobanner3,
                 ],
               ),
             ),
