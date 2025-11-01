@@ -1,4 +1,4 @@
-import 'package:alinova_ecommerce/common/widgets/banners/banner_images.dart';
+import 'package:alinova_ecommerce/common/widgets/images/rounded_images.dart';
 import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/custom_container.dart';
 import 'package:alinova_ecommerce/features/shop/controllers/home_controller.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';

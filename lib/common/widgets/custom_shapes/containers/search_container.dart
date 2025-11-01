@@ -11,12 +11,14 @@ class ASearchBox extends StatelessWidget {
     required this.text,
     this.showBackground = true,
     this.showBorder = true, 
-    this.onTap,
+    this.onTap, 
+    this.padding = const EdgeInsets.symmetric(horizontal: ASizes.defaultSpace),
   });
 
   final String text;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +27,7 @@ class ASearchBox extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: ASizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: ADeviceUtils.getScreenWidth(context),
           padding: EdgeInsets.all(ASizes.md),

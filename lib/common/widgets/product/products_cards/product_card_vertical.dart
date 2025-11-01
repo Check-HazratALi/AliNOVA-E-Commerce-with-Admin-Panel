@@ -1,10 +1,13 @@
 import 'package:alinova_ecommerce/common/styles/rounded_container.dart';
 import 'package:alinova_ecommerce/common/styles/shadow.dart';
-import 'package:alinova_ecommerce/common/widgets/banners/banner_images.dart';
+import 'package:alinova_ecommerce/common/widgets/images/rounded_images.dart';
 import 'package:alinova_ecommerce/common/widgets/icons/a_circular_icon.dart';
+import 'package:alinova_ecommerce/common/widgets/texts/brand_title_text.dart';
+import 'package:alinova_ecommerce/common/widgets/texts/brand_title_with_verify.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/product_price.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/producttitle_text.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
+import 'package:alinova_ecommerce/utils/constants/enums.dart';
 import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/helpers/healper_function.dart';
@@ -82,22 +85,9 @@ class ProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: ASizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        "Nike",
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(width: ASizes.xs),
-                      Icon(
-                        Iconsax.verify5,
-                        color: AColors.primary,
-                        size: ASizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  BrandTitleTextWithVerification(
+                    title: "Nike"
+                  )
                 ],
               ),
             ),
@@ -105,7 +95,6 @@ class ProductCardVertical extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: ProductPriceText(price: '35', isLarge: true),
@@ -135,3 +124,6 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+
+
