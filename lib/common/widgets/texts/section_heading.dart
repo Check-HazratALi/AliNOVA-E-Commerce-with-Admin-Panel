@@ -3,14 +3,12 @@ import 'package:flutter/material.dart';
 class sectionHeading extends StatelessWidget {
   const sectionHeading({
     super.key,
-    this.textColor = Colors.black,
     this.showActionButton=true,
     required this.title,
     this.buttonTitle = "View all",
     this.onPressed,
   });
 
-  final Color? textColor;
   final bool showActionButton;
   final String title, buttonTitle;
   final void Function()? onPressed;
@@ -23,7 +21,7 @@ class sectionHeading extends StatelessWidget {
           title,
           style: Theme.of(
             context,
-          ).textTheme.headlineSmall!.apply(color: textColor),
+          ).textTheme.headlineSmall,
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
         ),

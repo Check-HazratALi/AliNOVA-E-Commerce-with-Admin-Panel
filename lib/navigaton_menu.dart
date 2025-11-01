@@ -1,3 +1,4 @@
+import 'package:alinova_ecommerce/features/presonalization/screens/settings/settings.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/home.dart';
 import 'package:alinova_ecommerce/features/shop/screens/store/store.dart';
 import 'package:alinova_ecommerce/features/shop/screens/wishlist/wishlist.dart';
@@ -46,6 +47,6 @@ class NavigationController extends GetxController{
     HomeScreen(),
     StoreScreen(),
     FavouriteScreen(),
-    Container(color: Colors.yellow,),
+    SettingsScreen(),
   ];
 }
