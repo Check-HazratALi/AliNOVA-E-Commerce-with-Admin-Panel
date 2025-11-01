@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class sectionHeading extends StatelessWidget {
   const sectionHeading({
     super.key,
-    this.textColor,
+    this.textColor = Colors.white,
     required this.showActionButton,
     required this.title,
     this.buttonTitle = "View all",
