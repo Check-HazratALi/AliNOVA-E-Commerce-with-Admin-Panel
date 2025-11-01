@@ -21,7 +21,7 @@ class PromoSlider extends StatelessWidget {
     return Column(
       children: [
         CarouselSlider(
-          items: banners.map((url) => BannerImages(imageUrl: url)).toList(),
+          items: banners.map((url) => RoundedImages(imageUrl: url)).toList(),
           options: CarouselOptions(
             viewportFraction: 1,
             onPageChanged: (index,_)=> controller.updatePageIndicator(index)

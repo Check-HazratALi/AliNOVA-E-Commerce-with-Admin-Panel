@@ -2,8 +2,8 @@ import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class BannerImages extends StatelessWidget {
-  const BannerImages({
+class RoundedImages extends StatelessWidget {
+  const RoundedImages({
     super.key,
     this.width,
     this.height,

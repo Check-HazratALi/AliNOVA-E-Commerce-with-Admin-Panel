@@ -1,4 +1,5 @@
 import 'package:alinova_ecommerce/features/shop/screens/home/home.dart';
+import 'package:alinova_ecommerce/features/shop/screens/store/store.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/helpers/healper_function.dart';
 import 'package:flutter/material.dart';
@@ -42,7 +43,7 @@ class NavigationController extends GetxController{
 
   final screnns = [
     HomeScreen(),
-    Container(color: Colors.red,),
+    StoreScreen(),
     Container(color: Colors.green,),
     Container(color: Colors.yellow,),
   ];

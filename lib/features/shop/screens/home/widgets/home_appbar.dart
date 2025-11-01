@@ -1,5 +1,5 @@
 import 'package:alinova_ecommerce/common/widgets/appbar/appbar.dart';
-import 'package:alinova_ecommerce/common/widgets/product_cart/cart_menu_icon.dart';
+import 'package:alinova_ecommerce/common/widgets/product/cart/cart_menu_icon.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';

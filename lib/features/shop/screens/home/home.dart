@@ -1,5 +1,7 @@
 import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/primaryheader_container.dart';
 import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:alinova_ecommerce/common/widgets/layouts/grid_layout.dart';
+import 'package:alinova_ecommerce/common/widgets/product/products_cards/product_card_vertical.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/home_categories.dart';
@@ -50,13 +52,16 @@ class HomeScreen extends StatelessWidget {
             //Body
             Padding(
               padding: const EdgeInsets.all(ASizes.defaultSpace),
-              child: PromoSlider(
-                banners: [
-                  AImages.promobanner1,
-                  
-                  AImages.promobanner2,
-                  
-                  AImages.promobanner3,
+              child: Column(
+                children: [
+                  //Banner and Slider
+                  PromoSlider(banners: [AImages.promobanner1, AImages.promobanner2,AImages.promobanner3,],),
+                  const SizedBox(height: ASizes.spaceBtwSections),
+                  // Populer Products
+                  GridLayout(
+                    itemCount: 6,
+                    itemBuilder: (_, index) => ProductCardVertical(),
+                  ),
                 ],
               ),
             ),
@@ -66,4 +71,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
+
 
