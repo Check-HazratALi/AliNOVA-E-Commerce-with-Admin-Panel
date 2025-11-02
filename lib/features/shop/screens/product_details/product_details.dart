@@ -4,6 +4,7 @@ import 'package:alinova_ecommerce/common/widgets/custom_shapes/curved_edges/curv
 import 'package:alinova_ecommerce/common/widgets/icons/a_circular_icon.dart';
 import 'package:alinova_ecommerce/common/widgets/images/rounded_images.dart';
 import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
+import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/rating_and_share.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
@@ -25,10 +26,31 @@ class ProductDetails extends StatelessWidget {
             ProductDetailsImageSlider(),
 
             // Product details
+            Padding(
+              padding: EdgeInsets.only(
+                right: ASizes.defaultSpace,
+                left: ASizes.defaultSpace,
+                bottom: ASizes.defaultSpace,
+              ),
+              child: Column(
+                children: [
+                  //Rating
+                  RatingAndShare(),
 
+                  // Price, Title, Stock & Brand
+                  // Attributes
+                  // Checkout Button
+                  // Description
+                  //Reviews
+
+
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
+
