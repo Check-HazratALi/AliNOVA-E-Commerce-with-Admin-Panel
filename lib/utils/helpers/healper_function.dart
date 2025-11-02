@@ -22,8 +22,8 @@ class AHelperFunctions {
       return Colors.black;
     } else if (value == 'White'){
       return Colors.white;
-    } else if (value == 'Green'){
-      return Colors.green;
+    } else if (value == 'Yellow'){
+      return const Color.fromARGB(255, 198, 241, 4);
     } else if (value == 'Green'){
       return Colors.green;
     } else if (value == 'Green'){
