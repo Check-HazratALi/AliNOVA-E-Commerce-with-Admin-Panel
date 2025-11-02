@@ -5,11 +5,13 @@ import 'package:alinova_ecommerce/common/widgets/icons/a_circular_icon.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/brand_title_with_verify.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/product_price.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/producttitle_text.dart';
+import 'package:alinova_ecommerce/features/shop/screens/product_details/product_details.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/helpers/healper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class ProductCardVertical extends StatelessWidget {
@@ -20,7 +22,7 @@ class ProductCardVertical extends StatelessWidget {
     final dark = AHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(()=> ProductDetails()),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
