@@ -4,6 +4,7 @@ import 'package:alinova_ecommerce/common/widgets/custom_shapes/curved_edges/curv
 import 'package:alinova_ecommerce/common/widgets/icons/a_circular_icon.dart';
 import 'package:alinova_ecommerce/common/widgets/images/rounded_images.dart';
 import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
+import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/rating_and_share.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
@@ -38,6 +39,8 @@ class ProductDetails extends StatelessWidget {
                   RatingAndShare(),
 
                   // Price, Title, Stock & Brand
+                  ProductMetaData(),
+                  
                   // Attributes
                   // Checkout Button
                   // Description
