@@ -1,8 +1,10 @@
 import 'package:alinova_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:alinova_ecommerce/common/widgets/product/cart/cart_menu_icon.dart';
+import 'package:alinova_ecommerce/features/shop/screens/cart/cart.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AHomeAppBar extends StatelessWidget {
   const AHomeAppBar({
@@ -20,7 +22,7 @@ class AHomeAppBar extends StatelessWidget {
         ],
       ),
       actions: [
-        ACartCunterIcon(onPressed: () {}, iconColor: Colors.white,)
+        ACartCunterIcon(onPressed: () => Get.to(()=> CartScreen()), iconColor: Colors.white,)
       ],
     );
   }
