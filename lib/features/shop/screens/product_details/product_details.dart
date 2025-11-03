@@ -4,8 +4,10 @@ import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/
 import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/product_details_image_slider.dart';
 import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/product_meta_data.dart';
 import 'package:alinova_ecommerce/features/shop/screens/product_details/widgets/rating_and_share.dart';
+import 'package:alinova_ecommerce/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -67,7 +69,7 @@ class ProductDetails extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       sectionHeading(title: 'Review (199)', showActionButton: false,),
-                      IconButton(onPressed: (){}, icon: Icon(Iconsax.arrow_right_3, size: 18,)),
+                      IconButton(onPressed: ()=>Get.to(()=>ProductReviewScreen()), icon: Icon(Iconsax.arrow_right_3, size: 18,)),
                     ],
                   ),
                   SizedBox(height: ASizes.spaceBtwSections,)
