@@ -3,9 +3,11 @@ import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/primar
 import 'package:alinova_ecommerce/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:alinova_ecommerce/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:alinova_ecommerce/features/presonalization/screens/address/address.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingsScreen extends StatelessWidget {
@@ -54,7 +56,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Addresses',
                     subTitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(()=> UserAddressScreen()),
                   ),
                   SettingsMenuTile(
                     icon: Iconsax.shopping_cart,
