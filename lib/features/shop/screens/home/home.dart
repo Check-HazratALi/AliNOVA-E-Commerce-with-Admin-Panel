@@ -3,12 +3,14 @@ import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/search
 import 'package:alinova_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:alinova_ecommerce/common/widgets/product/products_cards/product_card_vertical.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:alinova_ecommerce/features/shop/screens/all_product/all_products.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:alinova_ecommerce/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -59,6 +61,12 @@ class HomeScreen extends StatelessWidget {
                   PromoSlider(banners: [AImages.promobanner1, AImages.promobanner2,AImages.promobanner3,],),
                   const SizedBox(height: ASizes.spaceBtwSections),
                   // Populer Products
+                  sectionHeading(
+                          title: 'Popular Products',
+                          showActionButton: true,
+                          onPressed: () => Get.to(()=>AllProducts()),
+                        ),
+                        SizedBox(height: ASizes.spaceBtwItems),
                   GridLayout(
                     itemCount: 6,
                     itemBuilder: (_, index) => ProductCardVertical(),
