@@ -4,6 +4,8 @@ import 'package:alinova_ecommerce/common/widgets/list_tile/settings_menu_tile.da
 import 'package:alinova_ecommerce/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:alinova_ecommerce/features/presonalization/screens/address/address.dart';
+import 'package:alinova_ecommerce/features/shop/screens/cart/cart.dart';
+import 'package:alinova_ecommerce/features/shop/screens/order/order.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -62,13 +64,13 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.shopping_cart,
                     title: 'My Cart',
                     subTitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(()=> CartScreen())
                   ),
                   SettingsMenuTile(
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(()=> OrderScreen()),
                   ),
                   SettingsMenuTile(
                     icon: Iconsax.bank,

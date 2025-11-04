@@ -1,6 +1,8 @@
 import 'package:alinova_ecommerce/common/widgets/image_text_widgets.dart/vertical_image_text.dart';
+import 'package:alinova_ecommerce/features/shop/screens/sub_category/sub_categories.dart';
 import 'package:alinova_ecommerce/utils/constants/image_strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class homeCategories extends StatelessWidget {
   const homeCategories({
@@ -19,7 +21,7 @@ class homeCategories extends StatelessWidget {
           return AVerticalImageText(
             image: AImages.darkApplogo, 
             title: 'Shoes', 
-            onTap: () {},
+            onTap: () => Get.to(()=> SubCategoriesScreen()),
           );
         },
       ),
