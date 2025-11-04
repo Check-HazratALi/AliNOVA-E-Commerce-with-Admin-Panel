@@ -5,11 +5,13 @@ import 'package:alinova_ecommerce/common/widgets/custom_shapes/containers/search
 import 'package:alinova_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:alinova_ecommerce/common/widgets/product/cart/cart_menu_icon.dart';
 import 'package:alinova_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:alinova_ecommerce/features/shop/screens/brands/all_brands.dart';
 import 'package:alinova_ecommerce/features/shop/screens/store/widgets.dart/category_tab.dart';
 import 'package:alinova_ecommerce/utils/constants/colors.dart';
 import 'package:alinova_ecommerce/utils/constants/sizes.dart';
 import 'package:alinova_ecommerce/utils/helpers/healper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class StoreScreen extends StatelessWidget {
   const StoreScreen({super.key});
@@ -55,7 +57,7 @@ class StoreScreen extends StatelessWidget {
                       //Featured Brands
                       sectionHeading(
                         title: "Featured Brands",
-                        onPressed: () {},
+                        onPressed: () => Get.to(()=> AllBrandsScreen()),
                       ),
                       SizedBox(height: ASizes.spaceBtwItems / 1.5),
 
